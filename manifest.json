@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Tweet Code",
+    "description": "Render code in tweets on twitter.com",
+    "version": "1.0",
+    "homepage_url": "https://github.com/vutran/code-tweets",
+    "permissions": ["https://twitter.com/"],
+    "content_scripts": [
+        {
+            "matches": ["https://twitter.com/*"],
+            "css": [
+                "index.css"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
+}
